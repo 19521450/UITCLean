@@ -1,0 +1,61 @@
+// ------------COLOR---------------
+$color-white: #fff;
+$color-dark-h3: #141414;
+$color-grey-p: #808080;
+$color-orange-title: #f45d01;
+$color-red-icon: #db162f;
+
+//---------BackGround---------
+
+$color-bg-dark: #141414;
+$color-bg-grey: #808080;
+$color-bg-grey-1: rgba(64, 64, 64, 0.1);
+$color-bg-blue: #eaf2fb;
+$color-bg-orange: #f45d01;
+
+//----------Font-------------
+$font-size-html: 16px;
+$font-size-1: 1.4rem;
+$font-size-2: 1.8rem;
+$font-size-3: 2.4rem;
+$font-size-4: 4rem;
+$font-size-5: 6rem;
+
+//---------FontWeight---------
+$font-weight-normal: normal;
+$font-weight-300: 300;
+$font-weight-400: 400;
+$font-weight-600: 600;
+$font-weight-700: 700;
+$font-weight-bold: bold;
+
+//---------Padding------------
+$pd-1: 10px;
+$pd-2: 15px;
+$pd-3: 25px;
+$pd-4: 30px;
+$pd-5: 48px;
+
+// -----------Margin-------------
+$mg-1: 10px;
+$mg-2: 15px;
+$mg-3: 20px;
+$mg-4: 25px;
+$mg-5: 30px;
+$mg-10: 206px;
+
+//----------BORDER---------
+$border-1: 1px solid transparent;
+
+// --------ShaDow-----------
+$box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+
+// break point
+
+$breakpoints: (
+    "screen-1": 1350px,
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 767.98px,
+    "small": 576px,
+);

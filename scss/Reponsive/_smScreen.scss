@@ -1,0 +1,38 @@
+@media screen and (max-width: 575.98px) {
+    header {
+        .headerTop {
+            padding: 10px 0;
+
+           
+        }
+
+        #navbarRespon {
+           .navbar-brand{
+            font-size: 20px!important;
+           }
+           .navbar-toggler{
+            font-size: 1rem;
+           }
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 13px;
+                            padding: 5px 0;
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+
+    .cleanFreshhny-blog {
+        display: flex;
+        flex-direction: column-reverse;
+
+        #blog {
+            grid-template-columns: 90% !important;
+        }
+    }
+}

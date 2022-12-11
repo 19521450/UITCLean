@@ -1,0 +1,762 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.headerTop {
+    background-color: #115D9D;
+    background-size: 100%;
+    .headerTopLeft {
+        p,
+        a {
+            font-size: 14px;
+        }
+    }
+    .headerTopRightIcon {
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+header {
+    position: sticky;
+    top:0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    .headerBottom {
+        nav {
+            background-color: white!important;
+            .navbar-collapse {
+                .navbar-nav {
+                    position: relative;
+                    .nav-item {
+                        .nav-link {
+                            font-size: 16px;
+                            font-weight: bold;
+                            padding: 15px 8px 15px 15px;
+                            color: black;
+                            transition: all 0.5s;
+                        }
+                        .btn-search {
+                            padding-bottom: 0 !important;
+                            padding-top: 15px !important;
+                            i {
+                                font-size: 16px;
+                                opacity: 0.7;
+                            }
+                            &:hover > i {
+                                color: #f45d01;
+                                opacity: 1;
+                            }
+                            &:focus {
+                                box-shadow: none;
+                            }
+                        }
+                        .search-nav {
+                            position: absolute;
+                            z-index: 10;
+                            width: 100%;
+                            display: none;
+                            input {
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                            }
+                            button {
+                                position: absolute;
+                                left: 32%;
+                                &:focus {
+                                    box-shadow: none;
+                                }
+                                &:hover {
+                                    color: #f45d01;
+                                }
+                            }
+                        }
+                        &:hover{
+                            background-color: transparent!important;
+                        }
+                        &.active{
+                            background-color: transparent!important;
+                        }
+                        &.active > .nav-link {
+                            color: #f45d01;
+                        
+                        }
+                        &:hover > .nav-link {
+                            color: #f45d01;
+                        
+                        }
+                        .btn-getStarted {
+                            border-radius: 30px !important;
+                            padding: 10px 30px;
+                            font-weight: bold;
+                            transition: all 0.5s;
+                            &:hover {
+                                background-color: #bd2638 !important;
+                                border-color: #b32435;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.Banner {
+    position: relative;
+    .swiper {
+        width: 100%;
+        height: 650px;
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .contentText {
+                position: absolute;
+                font-weight: bold;
+                max-width: 700px;
+                text-align: left;
+                left: 20%;
+                z-index: 20;
+                h6 {
+                    color: #f45d01;
+                    font-size: 20px;
+                }
+                h1 {
+                    font-size: 60px;
+                    color: white;
+                }
+                button {
+                    color: white;
+                    border-radius: 25px;
+                    border: 2px solid white;
+                    padding: 0 30px;
+                    font-size: 16px;
+                    line-height: 48px;
+                    font-weight: bold;
+                    transition: all 0.5s;
+                    &:hover {
+                        background-color: white;
+                        color: #f45d01;
+                    }
+                }
+            }
+            &::after {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.479);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+        }
+        .slide1 {
+            width: 100%;
+            min-height: 650px;
+            background-image: url("https://wp.w3layouts.com/cleanfreshly/wp-content/themes/clean-freshly/assets/images/banner1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .slide2 {
+            width: 100%;
+            min-height: 650px;
+            background-image: url("https://wp.w3layouts.com/cleanfreshly/wp-content/themes/clean-freshly/assets/images/banner2.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .slide3 {
+            width: 100%;
+            min-height: 650px;
+            background-image: url("https://wp.w3layouts.com/cleanfreshly/wp-content/themes/clean-freshly/assets/images/banner3.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .slide4 {
+            width: 100%;
+            min-height: 650px;
+            background-image: url("https://wp.w3layouts.com/cleanfreshly/wp-content/themes/clean-freshly/assets/images/banner4.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: white;
+        }
+    }
+    .Features {
+        position: absolute;
+        width: 100%;
+        bottom: -35%;
+        z-index: 10;
+        .featuresItem {
+            text-align: center;
+            background-color: white;
+            padding: 60px 50px;
+            box-shadow: 0 0 40px 3px rgb(0 0 0 / 5%);
+            transition: all 0.2s;
+            cursor: pointer;
+            &:hover,
+            &.active {
+                background-color: #2d7dd2;
+                color: white;
+                i {
+                    color: #2d7dd2;
+                    background-color: white;
+                }
+                p {
+                    color: white;
+                }
+            }
+            i {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                border-radius: 50%;
+                background-color: #2d7dd2;
+                color: white;
+                font-size: 20px;
+                transition: all 0.5s;
+            }
+            h3 {
+                font-size: 24px;
+                line-height: 25px;
+                font-weight: bold;
+                margin: 30px 0 15px;
+            }
+            p {
+                font-size: 16px;
+                color: #808080;
+            }
+        }
+    }
+}
+.welcome {
+    margin-top: 300px;
+    .welcomeText {
+        h5 {
+            color: #f45d01;
+        }
+        h3 {
+            font-weight: bold;
+        }
+        p {
+            color: #808080;
+            font-size: 1rem;
+        }
+        button {
+            border-radius: 25px;
+            padding: 0px 30px;
+            height: 50px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.5s;
+            &:hover {
+                background-color: #f45d01;
+                color: white;
+            }
+        }
+    }
+}
+.quality {
+    background-color: #eaf2fb;
+    margin-top: 100px;
+    .qualityTop {
+        h1 {
+            font-weight: bold;
+        }
+        p {
+            font-size: 15px;
+            color: #808080;
+        }
+    }
+    .qualityBottom {
+        .work {
+            i {
+                font-size: 30px;
+                color: #f45d01;
+            }
+            h6 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 25px;
+                width: 200px;
+            }
+            &:hover > i {
+                color: #2d7dd2;
+            }
+        }
+    }
+}
+.features2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .features2Item {
+        padding: 40px 30px;
+        border-radius: 7px;
+
+        i {
+            color: #2d7dd2;
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+        }
+        .text {
+            h5 {
+                margin: 20px 0;
+                cursor: pointer;
+            }
+        }
+        &:hover {
+            border-bottom: 2px solid #2d7dd2;
+            box-shadow: 0 40px 90px 0 rgb(0 0 0 / 12%);
+            background: rgba(255, 255, 255, 0.05);
+        }
+    }
+}
+.simpleText {
+    background-color: #eaf2fb;
+    padding: 40px 0;
+    .leftItem {
+        h5 {
+            font-size: 16px;
+            color: #f45d01;
+            font-weight: 600;
+        }
+        h3 {
+            font-weight: bold;
+            letter-spacing: 3px;
+            font-size: 36px;
+        }
+        p {
+            color: #808080;
+        }
+    }
+    .rightItem {
+        .simpleTextItem {
+            margin: 30px 0;
+            h6 {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+            .progress {
+                border-radius: 0;
+                .progress-bar {
+                    background-color: #2d7dd2;
+                }
+            }
+        }
+    }
+}
+.ourTeam {
+    .ourTeamTop {
+        h5 {
+            color: #f45d01;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        p {
+            color: #808080;
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+    .ourTeamBottom {
+        .ourTeamBottomItem {
+            .card {
+                cursor: pointer;
+                border: none!important;
+                box-shadow: 0 6px 16px 0 rgb(0 0 0 / 10%);
+                border-radius: 5px;
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                        transition: all 0.5s;
+                    }
+                    .card-body a {
+                        text-decoration: none;
+                        color: #2d7dd2;
+                    }
+                }
+                
+                .Img {
+                    text-align: center;
+                    width: 100%;
+                    overflow: hidden!important;
+                    img {
+                        border-radius: 7px;
+                    }
+                }
+                .card-body {
+                    a {
+                        font-size: 22px;
+                        line-height: 26px;
+                        font-weight: bold;
+                        color: #141414;
+                        transition: all 0.5s;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 25px;
+                        color: #5f5f5f;
+                    }
+                    .cardIcon {
+                        a {
+                            display: inline-block;
+                            margin-right: 10px px;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            line-height: 30px;
+                            text-align: center;
+                            background: #ffefe6;
+                            color: #f45d01;
+                            i{
+                                font-size: 12px;
+                                line-height: 30px;
+                                display: block;
+                            }
+                            &:hover{
+                                color: white;
+                                background-color:#f45d01 ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.satisfiedClient{
+    margin: 100px 0;
+    background-image: url('	https://wp.w3layouts.com/cleanfreshly/wp-content/themes/clean-freshly/assets/images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    &::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.69);
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .satisfiedClientItem{
+        position: relative;
+        padding: 100px 0;
+        color: white;
+        z-index: 10;
+        p{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.65);
+        }
+        .satisfiedClientTop{
+            h6{
+                font-weight: bold;
+                font-size: 16px;
+                color: #F45D01!important;
+                margin-bottom: 10px;
+            }
+            h3{
+                font-size: 36px;
+                line-height: 46px;
+                text-transform: capitalize;
+                font-weight: bold;
+            }
+            }
+        .satisfiedClientBottom{
+            h3{
+                font-size: 24px;
+            }
+        }
+    }
+}
+.packages{
+    .packagesTitle{
+        p{
+            margin: auto;
+            color: #808080;
+        }
+        h6{
+            color: #F45D01;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom:10px ;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 46px;
+            
+        }
+    }
+    .packagesItems{
+        
+        .items{
+            &:hover{
+                box-shadow: 0 40px 90px 0 rgb(0 0 0 / 12%);
+            }
+            border-bottom-style: solid;
+            background: rgba(255, 255, 255, .05);
+            padding: 0;
+            h6{
+                color: #F45D01;
+                font-weight: bold;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin:  20px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    span{
+                        font-size: 16px;
+                        color: #808080;
+                    }
+                    .fa-check-circle{
+                        color: rgba(0, 128, 0, 0.715);
+                        width: 25px;
+                        line-height: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                    .fa-times-circle{
+                        color: #DB162F;
+                        width: 25px;
+                        line-height: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        text-align: center;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .sub-title{
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 25px;
+                text-align: center;
+                font-weight: 700;
+            }
+            label{
+                font-size: 25px;
+                vertical-align: text-top;
+                color: #808080;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+.AboutCompany{
+    .AboutCompanyText{
+        h3{
+            font-weight: 600;
+            font-size: 16px;
+            color: #F45D01;
+            margin-bottom: 10px;
+        }
+        h1{
+            font-weight: bold;
+        }
+        p{
+            color: #808080;
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .AboutCompanyImg{
+        img{
+            border-radius: 20px;
+        }
+    }
+}
+.breadcrumbs{
+    background-color: #EAF2FB;
+}
+.Service {
+    .Service_content {
+        .content_photo {
+            .content_photo_left {
+                margin: 50px 0;
+                a {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+            }
+            .content_photo_right {
+                margin: 50px 0;
+                vertical-align: middle;
+                padding: 50px 0;
+                .sub_title {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #f45d01;
+                    margin-bottom: 10px;
+                }
+                .hny_title {
+                    font-size: 36px;
+                    line-height: 46px;
+                    color: #141414;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                }
+                .service_info {
+                    ul {
+                        list-style: none;
+                        li {
+                            text-decoration: none;
+                            a {
+                                cursor: pointer;
+                                margin-top: 20px;
+                                span {
+                                    color: green;
+                                    margin-right: 6px;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }
+                                display: block;
+                                color: #808080;
+                                font-size: 16px;
+                                line-height: 20px;
+                                font-weight: 600;
+                                margin-bottom: 16px;
+                                &:hover {
+                                    text-decoration: none;
+                                    color: #2d7dd2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .Footer_content {
+        background-color: #141414;
+        .FooterTop_content {
+            border-bottom: 1px solid #333;
+            padding: 0 10px;
+            margin-bottom: 50px;
+            .footer_icon {
+                i {
+                    color: white;
+                    padding: 0 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .FooterInfo {
+            .Footer_info_row {
+                padding-bottom: 50px;
+
+                .footer_title {
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        text-decoration: none;
+                        a {
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: #777;
+                            text-transform: capitalize;
+                            margin-bottom: 6px;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .Footer_Bottom {
+            border-top: 1px solid #333;
+            padding: 26px 15px;
+            font-size: 16px;
+            line-height: 25px;
+            color: #999;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
+
+#myBtn {
+    width: 50px;
+    height: 50px;/* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border-radius: 50%;
+    background-color: #2d7dd2; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 5px; /* Some padding */
+    font-size: 18px; /* Increase font size */
+    &:hover{
+        background-color: #f45d01;
+    }
+  }
+
+@media screen and (min-width: 468px) and (max-width:768px) {
+    .Banner{
+        .Features{
+            position: relative;
+        }
+
+    }
+}

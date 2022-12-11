@@ -1,0 +1,44 @@
+@media screen and (max-width: 767.98px) {
+    header {
+        .headerTop {
+            .headerTop_content {
+                .headerTopLeft {
+                    p {
+                        font-size: 13px;
+                        line-height: 24px;
+                    }
+                }
+                .headerTopRightIcon {
+                    margin-left: 12%;
+                }
+            }
+        }
+        #navbarRespon {
+            a {
+                font-size: 23px;
+            }
+            .navbar-toggler {
+                font-size: 1.1rem;
+            }
+            .navbar-collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-size: 13px;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .cleanFreshhny-blog {
+        #blog {
+            grid-template-columns: 50% 50%;
+        }
+        .blog-post {
+            padding-left: 0;
+        }
+    }
+}

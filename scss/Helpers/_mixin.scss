@@ -1,0 +1,65 @@
+@mixin text($weight, $margin) {
+	font-weight: $weight;
+	margin-bottom: $margin;
+}
+
+@mixin styleTitleContent() {
+	.title-content {
+		padding-top: 3rem;
+		max-width: 1200px;
+
+		text-align: center;
+		.sub-title {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 16px;
+			color: #f45d01;
+			margin-bottom: 10px;
+		}
+		.hny-title {
+			font-size: 36px;
+			line-height: 46px;
+			color: #141414;
+			text-transform: capitalize;
+			font-weight: 700;
+		}
+		.title-para {
+			color: #808080;
+			margin: 0 auto;
+			width: 50%;
+		}
+	}
+}
+
+@mixin IconStyle() {
+	.icon-Item {
+		color: #db162f;
+		margin-right: 8px;
+		font-size: 11px;
+	}
+}
+
+
+// Responsive
+
+$XS:     480px;   
+$SM:     768px;  
+$MD:    1024px;   
+$XL:   1170px;     
+
+// media queries
+
+@mixin Responsive($canvas) {
+  @if $canvas == XS {
+   @media only screen and (min-width: $XS) { @content; } 
+  }
+  @else if $canvas == SM {
+   @media only screen and (min-width: $SM) { @content; } 
+  }
+  @else if $canvas == MD {
+   @media only screen and (min-width: $MD) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $XL) { @content; } 
+  }
+}

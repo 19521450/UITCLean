@@ -1,0 +1,16 @@
+@media screen and (min-width: 992px) {
+    .cleanFreshhny-blog {
+        grid-template-columns: 550px 500px;
+        .blog-img {
+            grid-template-columns: 45% 45%;
+        }
+    }
+
+    
+}
+
+@media screen and(min-width:1200px) {
+    .cleanFreshhny-blog {
+        grid-template-columns: 750px 500px;
+    }
+}
